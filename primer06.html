@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset = utf8>
+<html>
+<head>
+    <title>Primer z grafom</title>
+</head>
+
+<body>
+
+<canvas id="cv" width = "200" height = "100" style="border: 1px dashed #00c3c3;"></canvas>
+<p></p>
+
+Primer z grafom.
+
+<script type="text/javascript">
+
+var x1 = new Array(); // polje za spremenljivko x1
+var y1 = new Array(); // polje za spremenljivko y1
+var canvas;
+var ctx;
+
+canvas = document.getElementById("cv");
+ctx = canvas.getContext("2d");
+
+ctx.lineWidth = "1";
+ctx.strokeStyle = "#ff0000";
+
+ctx.beginPath(); // za začetek izrisa črte
+ctx.lineTo(10,100);
+ctx.lineTo(170,10);
+
+ctx.stroke();
+
+</script>
+
+
+</body>
+
+</html>
